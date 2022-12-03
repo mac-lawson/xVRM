@@ -1,14 +1,15 @@
-<script type="text/javascript">
-	
-	if (typeof window.ethereum !== 'undefined') {
-  console.log('MetaMask is installed!');
-  document.getElementById("metamaskCheck").innerHTML == "MetaMask detected";
-  document.getElementById("metamaskCheck").class == "alert alert-success alert-dismissible fade show";
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
+<script>
+/* To connect using MetaMask */
+async function connect() {
+ if (window.ethereum) {
+ 
+  await window.ethereum.request({ method: "eth_requestAccounts" });
+  window.web3 = new Web3(window.ethereum);
   
-}
-else {
-	console.log('MetaMask is not installed');
-	document.getElementById("metamaskCheck").innerHTML == "MetaMask is not installed. Please run xVRM in a modern desktop browser with MetaMask installed";
+ } else {
+  console.log("No wallet");
+ }
 }
 </script>
 
@@ -63,6 +64,9 @@ else {
             <li><a class="dropdown-item" href="./exchange">Exchange</a></li>
           </ul>
         </li>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
+        <button type="button" class="btn btn-primary" onclick="connect();">Connect to Metamask </button>
+
 
       </ul>
     </div>
@@ -86,8 +90,12 @@ else {
 
 			<center><img src="./xVRM.png" class="card-img-top" alt="..." style="width:600px;height:300px;">
 				<br>
-			<a href="#" class="link-info" data-bs-toggle="modal" data-bs-target="#about">About xVRM</a>
-</center>
+				<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#about">About xVRM</button>
+
+
+
+
+	</center>
 		</div>
 <!-- 		<div class="alert alert-primary d-flex align-items-center" role="alert">
 		  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
@@ -158,8 +166,6 @@ else {
   </div>
 </div>
 		<div class="p-3 mb-2 bg-dark text-white">
-
-		<br>
 		<center>		<h2>Live Market Info</h2>
 			<!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
