@@ -53,6 +53,9 @@
         </li>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
         <button type="button" class="btn btn-primary" onclick="connect();">Connect to Metamask </button>
+        <script src="back.js">
+</script>
+
 
 
       </ul>
@@ -62,7 +65,7 @@
 <!-- end of navbar -->
 <div class="container">
 <div class="alert alert-warning alert-dismissible fade show" role="alert" id="metamaskCheck">
-  For the best UX, run xVRM in a modern browser with Metamask installed
+  For the best UX, run xVRM on a desktop in a modern browser with Metamask installed
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -154,47 +157,41 @@
 </div>
 		<div class="p-3 mb-2 bg-dark text-white">
 		<center>		<h2>xVRM Platform</h2>
-      <br>
-      <br>
-      <div class="container text-center">
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-    <div class="p-3 mb-2 bg-dark text-white">
 
-  <div class="card-body">
-    <h5 class="card-title">Advanced Market Data</h5>
-    <p class="card-text">Powered by Trading View, xVRM has built-in advanced market information for users on-demand.</p>
-  </div>
-</div>
-</div>
+</center>      
+        <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Platform Features</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+        </div>
+        <h2>Tokens</h2>
+        <p>Our differing tokens have set value, and can be traded by users.</p>
 
-    </div>
-    <div class="col">
-            <div class="card" style="width: 18rem;">
-    <div class="p-3 mb-2 bg-dark text-white">
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+        </div>
+        <h2>Advanced Market Data</h2>
+        <p>Powered by Trading View, xVRM has built-in advanced market information for users on-demand.
 
-  <div class="card-body">
-    <h5 class="card-title">Backed by ERC-20 Tokens</h5>
-    <p class="card-text">Our differing tokens have set value, and can be traded by users.</p>
-  </div>
-</div>
-</div>
-    </div>
-    <div class="col">
-            <div class="card" style="width: 18rem;">
-    <div class="p-3 mb-2 bg-dark text-white">
+</p>
 
-  <div class="card-body">
-    <h5 class="card-title">Swap and Exchange</h5>
-    <p class="card-text">Our powerfull trading platform allows users to swap and exchange differing chains between each other in a matter of minutes, with limited fees. </p>
-  </div>
-</div>
-</div>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+        </div>
+        <h2>Swap and Exchange</h2>
+        <p>Our powerfull trading platform allows users to swap and exchange differing chains between each other in a matter of minutes, with limited fees.
+
+</p>
+
+      </div>
     </div>
   </div>
+    </div>
+
 </div>
-</center>
 
 
 
@@ -267,9 +264,9 @@
 
 
 <div class="container">
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<a class="link-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Terms and Conditions
-</button>
+</a>
 
 
 <!-- Modal -->
@@ -410,9 +407,9 @@
 <br>
 <!-- Button trigger modal -->
 		    <br>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+<a class="link-secondary" data-bs-toggle="modal" data-bs-target="#Modal">
   Privacy Policy
-</button>
+</a>
 
 <!-- Modal -->
 <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
