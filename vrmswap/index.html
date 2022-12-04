@@ -13,7 +13,7 @@
   <link rel="icon" type="image/x-icon" href="../logo.jpg">
 
 </head>
-<body style="background-color:rgb(20, 22, 31);">
+<body style="background-color:rgb(14, 15, 25);">
 <!-- !!!! -->
 
 
@@ -47,10 +47,10 @@
           <a class="nav-link" aria-current="page" href="../exchange">Exchange</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Advanced Tools</a>
+          <a class="nav-link" aria-current="page" href="../data">Advanced Tools</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="../vrmswap">valoremSwap</a>
+          <a class="nav-link active" aria-current="page" href="#">valoremSwap</a>
         </li>
                 <button type="button" class="btn btn-primary" onclick="connect();">Connect to Metamask </button>
 
@@ -60,55 +60,35 @@
     </div>
   </div>
 </nav>
+<!-- end of navbar -->
+
+
+        <div class="p-3 mb-2 text-white">
 
 <body>
-  <div class="p-3 mb-2 bg-dark text-white">
-      <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#ffffff" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="10" ></div>
-    <div class="container">        
-      <h2>Advanced Trading Data</h2>
-      <br>
 
+  <div class="container">
 
-
-    </div>
-
-<div class="container">
-
-
-    <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_1771b"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSD/?exchange=BITSTAMP" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "autosize": true,
-  "symbol": "BITSTAMP:BTCUSD",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "withdateranges": true,
-  "range": "YTD",
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "details": true,
-  "calendar": true,
-  "container_id": "tradingview_1771b"
-}
-  );
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-</div>
-
-
+    <h1>Swap GoerliETH/Tokens for VRM</h1>
+    <b>Ensure you are connected to the Goerli Network with metamask</b>
+    <br>
+    <br>
+   <iframe
+  src="https://app.uniswap.org/#/swap?outputCurrency=0xD38B3A2aEfef1AF63090faa17dF272D3365EB365&theme=dark"
+  height="660px"
+  width="100%"
+  style="
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    max-width: 600px;
+    min-width: 300px;
+  "
+/>
   </div>
+  </div>
+
 </body>
 
 
