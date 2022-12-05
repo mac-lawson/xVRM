@@ -8,17 +8,17 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 
-	<title>xVRM</title>
-	<link rel="icon" type="image/x-icon" href="./logo.jpg">
+  <title>xVRM</title>
+  <link rel="icon" type="image/x-icon" href="./logo.jpg">
   <link rel="icon" type="image/x-icon" href="../logo.jpg">
 
 </head>
-<body style="background-color:rgb(20, 22, 31);">
+<body style="background-color:rgb(14, 15, 25);">
 <!-- !!!! -->
 
 
 
-	<!-- start of navbar -->
+  <!-- start of navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">xVRM DeFi <span class="badge bg-secondary">Beta</span></a>
@@ -44,10 +44,10 @@
 
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="../swap">Exchange</a>
+          <a class="nav-link active" aria-current="page" href="../swap">Exchange</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Advanced Tools</a>
+          <a class="nav-link" aria-current="page" href="../data">Advanced Tools</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="../vrmswap">valoremSwap</a>
@@ -60,55 +60,55 @@
     </div>
   </div>
 </nav>
+<!-- end of navbar -->
 
 <body>
-  <div class="p-3 mb-2 bg-dark text-white">
-      <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#ffffff" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="10" ></div>
-    <div class="container">        
-      <h2>Advanced Trading Data</h2>
-      <br>
-
-
-
-    </div>
-
-<div class="container">
-
-
-    <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_1771b"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSD/?exchange=BITSTAMP" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "autosize": true,
-  "symbol": "BITSTAMP:BTCUSD",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "withdateranges": true,
-  "range": "YTD",
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "details": true,
-  "calendar": true,
-  "container_id": "tradingview_1771b"
-}
-  );
-  </script>
+  <div class="p-3 mb-2 text-white">
+  <div class="container">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="metamaskCheck">
+  After changing networks on your wallet, ensure to reload page
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
-<!-- TradingView Widget END -->
+  <h1>Swap</h1>
+  <h4>Swap tokens on main and testnet</h4>
+  <br>
+  <iframe
+  src="https://app.uniswap.org/#/swap?outputCurrency=0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359"
+  height="660px"
+  width="100%"
+  style="
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    max-width: 600px;
+    min-width: 300px;
+  "
+/> </iframe>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>Exchange</h1>
+  <h4>Purchase crypto from fiat</h4>
 
-
-</div>
-
+  <iframe
+  src="https://global.transak.com/"
+  height="660px"
+  width="100%"
+  style="
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    max-width: 600px;
+    min-width: 300px;
+  "
+/> </iframe>
 
   </div>
+  </div>
+
 </body>
-
-

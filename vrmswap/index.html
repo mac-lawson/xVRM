@@ -44,7 +44,7 @@
 
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="../exchange">Exchange</a>
+          <a class="nav-link" aria-current="page" href="../swap">Exchange</a>
         </li>
                 <li class="nav-item">
           <a class="nav-link" aria-current="page" href="../data">Advanced Tools</a>
@@ -68,13 +68,17 @@
 <body>
 
   <div class="container">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="metamaskCheck">
+  To swap GoerliETH to Valorem, change networks to Goerli and reload page
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 
     <h1>Swap GoerliETH/Tokens for VRM</h1>
     <b>Ensure you are connected to the Goerli Network with metamask</b>
     <br>
     <br>
    <iframe
-  src="https://app.uniswap.org/#/swap?outputCurrency=0xD38B3A2aEfef1AF63090faa17dF272D3365EB365&theme=dark"
+  src="https://app.uniswap.org/#/swap?outputCurrency=0xD38B3A2aEfef1AF63090faa17dF272D3365EB365&theme=dark&inputCurrency=ETH"
   height="660px"
   width="100%"
   style="
